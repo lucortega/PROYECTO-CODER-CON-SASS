@@ -1,0 +1,78 @@
+$color: rgba(138, 228, 59, 0.1);
+@import "animaciones";
+
+body {
+    background-color: $color;
+}
+
+nav {
+    background-color: $color;
+    ul {
+        background-color: $color;
+        li {
+            background-color: $color;
+        }
+    } 
+
+}
+.col-10 {
+    #nosotros {
+        background-color:  #DEF2C7;
+    }
+    #pfnosotros {
+        background-color: #DEF2C7;
+    }
+}
+.cabanas {
+    background-color: rgba(185,222,153,10%)
+}
+.col-10 {
+    background-color: $color;
+}
+.col-lg-2 {
+    background-color: $color;
+}
+.contactanos {
+    align-items: center;
+	margin: 60px 0;
+    a {
+        text-decoration: none;
+        color: #4A7F73;
+    }
+}
+
+.icono {
+    align-items: center;
+	margin: 60px 0;
+    a {
+        text-decoration: none;
+        color: #4A7F73;
+
+    }
+    h3 {
+        color: #31120D;
+    }
+}
+.container {
+    .col-lg-4 {
+        background-color: #D8EBE1; 
+    }
+}
+footer {
+    justify-content: center;
+	text-align: center;
+	margin-top: 80px;
+    color: #4A7F73;
+    a {
+        display: flex;
+        text-decoration: none;
+	    color: #4A7F73;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+.container {
+    .col-8 {
+        background-color: $color;
+    }
+}
