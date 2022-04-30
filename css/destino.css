@@ -70,23 +70,15 @@ nav ul li {
   background-color: rgba(138, 228, 59, 0.1);
 }
 
-.contactanos {
+.contactanos, .icono {
   align-items: center;
   margin: 60px 0;
 }
-.contactanos a {
+.contactanos a, .icono a {
   text-decoration: none;
   color: #4A7F73;
 }
 
-.icono {
-  align-items: center;
-  margin: 60px 0;
-}
-.icono a {
-  text-decoration: none;
-  color: #4A7F73;
-}
 .icono h3 {
   color: #31120D;
 }
@@ -96,6 +88,7 @@ nav ul li {
 }
 
 footer {
+  display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 80px;
@@ -103,9 +96,9 @@ footer {
 }
 footer a {
   display: flex;
+  justify-content: flex-start;
   text-decoration: none;
   color: #4A7F73;
-  justify-content: flex-start;
   align-items: center;
 }
 

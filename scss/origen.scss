@@ -1,8 +1,17 @@
 $color: rgba(138, 228, 59, 0.1);
 @import "animaciones";
-
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    
+}
+@mixin flex-flexstart {
+    display: flex;
+    justify-content: flex-start;
+}
 body {
     background-color: $color;
+    
 }
 
 nav {
@@ -42,16 +51,14 @@ nav {
 }
 
 .icono {
-    align-items: center;
-	margin: 60px 0;
-    a {
-        text-decoration: none;
-        color: #4A7F73;
-
-    }
-    h3 {
+    @extend .contactanos
+    
+ 
+}
+.icono h3 {
+   
         color: #31120D;
-    }
+    
 }
 .container {
     .col-lg-4 {
@@ -59,15 +66,15 @@ nav {
     }
 }
 footer {
-    justify-content: center;
+    @include flex-center();
 	text-align: center;
 	margin-top: 80px;
     color: #4A7F73;
     a {
-        display: flex;
+      @include flex-flexstart();
         text-decoration: none;
 	    color: #4A7F73;
-        justify-content: flex-start;
+        
         align-items: center;
     }
 }
