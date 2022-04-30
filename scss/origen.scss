@@ -1,4 +1,4 @@
-$color: rgba(138, 228, 59, 0.1);
+
 @import "animaciones";
 @mixin flex-center {
     display: flex;
@@ -13,13 +13,19 @@ body {
     background-color: $color;
     
 }
+/*MAPITA*/
+$estilos: (
+    color: rgba(185,222,153,10%)
+    textd: none
+);
+/////////*FIN MAPITA*///////
 
 nav {
-    background-color: $color;
+    background-color: map-get($estilos ,color );
     ul {
-        background-color: $color;
+        background-color: map-get($estilos ,color );
         li {
-            background-color: $color;
+            background-color: map-get($estilos ,color )
         }
     } 
 
@@ -33,10 +39,11 @@ nav {
     }
 }
 .cabanas {
-    background-color: rgba(185,222,153,10%)
+    background-color: map-get($estilos ,color )
 }
 .col-10 {
-    background-color: $color;
+  background-color: $color;
+    
 }
 .col-lg-2 {
     background-color: $color;
@@ -45,7 +52,7 @@ nav {
     align-items: center;
 	margin: 60px 0;
     a {
-        text-decoration: none;
+        text-decoration: map-get($estilos ,textd );
         color: #4A7F73;
     }
 }
@@ -80,6 +87,6 @@ footer {
 }
 .container {
     .col-8 {
-        background-color: $color;
+        background-color: map-get($estilos ,color )
     }
 }
